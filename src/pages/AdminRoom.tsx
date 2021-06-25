@@ -27,9 +27,7 @@ const AdminRoom: React.FC = () => {
   }
 
   async function handleHighlightQuestion(questionId: string) {
-    const questionRef = await database.ref(
-      `rooms/${roomId}/questions/${questionId}`
-    );
+    await database.ref(`rooms/${roomId}/questions/${questionId}`);
     await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
       isHighlighted: true,
     });

@@ -12,11 +12,6 @@ import { database } from '../services/firebase';
 import { useHistory, useParams } from 'react-router-dom';
 import { IQuestion, useRoom } from '../hooks/useRoom';
 
-interface Author {
-  displayName: string;
-  photoURL: string;
-}
-
 interface RoomParams {
   id: string;
 }
