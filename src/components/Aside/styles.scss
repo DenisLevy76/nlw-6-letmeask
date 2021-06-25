@@ -1,0 +1,34 @@
+aside {
+  background-color: var(--purple);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex: 6;
+
+  img {
+    max-width: 320px;
+  }
+
+  strong {
+    font: 700 2.25rem "Poppins", sans-serif;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+    color: var(--white-background);
+  }
+
+  @media (max-width: 1080px) {
+    & {
+      display: none;
+    }
+  }
+}

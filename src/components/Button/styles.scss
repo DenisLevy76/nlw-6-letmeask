@@ -1,0 +1,39 @@
+.btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  font-style: normal;
+  color: var(--white);
+
+  border-radius: 0.5rem;
+  height: 3.125rem;
+
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--purple);
+
+  border: none;
+
+  img {
+    margin-right: 0.5rem;
+  }
+
+  &:hover:not(:disabled) {
+    filter: brightness(0.88);
+    cursor: pointer;
+  }
+
+  &:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,28 @@
+.CopyCode {
+  background-color: var(--white);
+  color: var(--black);
+
+  border: 1px solid var(--purple);
+
+  padding: 0;
+
+  overflow: hidden;
+
+  div {
+    background-color: var(--purple);
+    padding: 0 0.5rem;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 0;
+    }
+  }
+  span {
+    padding: 0 0.5rem;
+  }
+}

@@ -1,0 +1,87 @@
+.page-auth {
+  display: flex;
+  align-items: stretch;
+  height: calc(100vh - 70px);
+
+  main {
+    flex: 8;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+      max-width: 320px;
+
+      align-items: stretch;
+      text-align: center;
+
+      > img {
+        align-self: center;
+        margin-bottom: 3.5rem;
+      }
+
+      .google {
+        line-height: 1.5rem;
+
+        background-color: var(--white);
+
+        border: 1px solid var(--gray-medium);
+
+        color: var(--black);
+      }
+
+      .auth {
+        background-color: var(--danger);
+        border: none;
+      }
+
+      .separator {
+        font-size: 0.93rem;
+        color: var(--gray-medium);
+        margin: 2rem 0;
+
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: '';
+          flex: 1;
+          height: 1px;
+          background-color: var(--gray-medium);
+          margin-right: 1rem;
+        }
+
+        &::after {
+          content: '';
+          flex: 1;
+          height: 1px;
+          background-color: var(--gray-medium);
+          margin-left: 1rem;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        gap: 1rem;
+
+        .join {
+          background-color: var(--purple);
+
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+}

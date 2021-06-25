@@ -1,0 +1,70 @@
+.page-newRoom {
+  display: flex;
+  align-items: stretch;
+  height: calc(100vh - 70px);
+
+  main {
+    flex: 8;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+      max-width: 320px;
+
+      align-items: stretch;
+      text-align: center;
+
+      > img {
+        align-self: center;
+        margin-bottom: 3.5rem;
+      }
+
+      h2 {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        gap: 1rem;
+
+        .join {
+          background-color: var(--purple);
+
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+        }
+
+        p {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+
+          color: var(--gray-dark);
+
+          a {
+            color: var(--pink-dark);
+          }
+        }
+      }
+    }
+  }
+}
